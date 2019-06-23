@@ -1,0 +1,6 @@
+framework module Pods_XYTrainTicketUITests {
+  umbrella header "Pods-XYTrainTicketUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
