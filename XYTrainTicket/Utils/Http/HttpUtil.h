@@ -14,7 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HttpUtil : NSObject
 
+singleton_interface
+
 -(void)sendHttpRequest:(id<RequestObj>)request complate:(void (^)(NSError* _Nullable error,NSDictionary* _Nullable response))complate;
+
 
 @end
 

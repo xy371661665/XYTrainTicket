@@ -1,0 +1,39 @@
+//
+//  TrainTicket.pch
+//  XYTrainTicket
+//
+//  Created by apple on 2019/7/7.
+//  Copyright © 2019 apple. All rights reserved.
+//
+
+#ifndef TrainTicket_pch
+#define TrainTicket_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// .h
+#define singleton_interface +(instancetype)getInstance;
+// .m
+#define singleton_implementation         \
+static id _instance;                        \
+\
++(id) allocWithZone : (struct _NSZone *) zone { \
+static dispatch_once_t onceToken;           \
+dispatch_once(&onceToken, ^{                \
+_instance = [super allocWithZone:zone]; \
+});                                         \
+\
+return _instance;                           \
+}                                               \
+\
++(instancetype) getInstance                   \
+{                                           \
+if (_instance == nil) {                     \
+_instance = [[self alloc] init];       \
+}                                           \
+\
+return _instance;                            \
+}
+
+#endif /* TrainTicket_pch */

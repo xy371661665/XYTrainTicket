@@ -17,6 +17,9 @@
 		187A666622BFB6CD005AA504 /* XYTrainTicketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A666522BFB6CD005AA504 /* XYTrainTicketTests.m */; };
 		187A667122BFB6CD005AA504 /* XYTrainTicketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A667022BFB6CD005AA504 /* XYTrainTicketUITests.m */; };
 		187A668522BFB793005AA504 /* HttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A668322BFB793005AA504 /* HttpUtil.m */; };
+		18B0869922D22A6C008FAF6D /* XYCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0869822D22A6C008FAF6D /* XYCover.m */; };
+		18B0869C22D23367008FAF6D /* CheckVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0869B22D23367008FAF6D /* CheckVerify.m */; };
+		18B086A022D23F54008FAF6D /* trainTicket.cer in Resources */ = {isa = PBXBuildFile; fileRef = 18B0869F22D23F54008FAF6D /* trainTicket.cer */; };
 		1F8A6CD23ACE9CA4946F1E61 /* Pods_XYTrainTicketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D302CDA343F1AA7B2B151D9 /* Pods_XYTrainTicketTests.framework */; };
 		69879DAF921C069CA63509D1 /* Pods_XYTrainTicketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C907C7DF6E4D12521217DD7A /* Pods_XYTrainTicketUITests.framework */; };
 		781DA0B813A1CB5FBD6DF8D6 /* Pods_XYTrainTicket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC45A19D2570C7BD30AEDA7 /* Pods_XYTrainTicket.framework */; };
@@ -63,6 +66,12 @@
 		187A667222BFB6CD005AA504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187A668322BFB793005AA504 /* HttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpUtil.m; sourceTree = "<group>"; };
 		187A668422BFB793005AA504 /* HttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtil.h; sourceTree = "<group>"; };
+		18B0869722D22A6C008FAF6D /* XYCover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYCover.h; sourceTree = "<group>"; };
+		18B0869822D22A6C008FAF6D /* XYCover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYCover.m; sourceTree = "<group>"; };
+		18B0869A22D23367008FAF6D /* CheckVerify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckVerify.h; sourceTree = "<group>"; };
+		18B0869B22D23367008FAF6D /* CheckVerify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckVerify.m; sourceTree = "<group>"; };
+		18B0869D22D2356C008FAF6D /* TrainTicket.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainTicket.pch; sourceTree = "<group>"; };
+		18B0869F22D23F54008FAF6D /* trainTicket.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = trainTicket.cer; sourceTree = "<group>"; };
 		336D3955D4132819FE6A7ED0 /* Pods-XYTrainTicket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYTrainTicket.debug.xcconfig"; path = "Target Support Files/Pods-XYTrainTicket/Pods-XYTrainTicket.debug.xcconfig"; sourceTree = "<group>"; };
 		4CF9C34EF11DA710D7250088 /* Pods-XYTrainTicketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYTrainTicketUITests.debug.xcconfig"; path = "Target Support Files/Pods-XYTrainTicketUITests/Pods-XYTrainTicketUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E3D2661022EDA4F1B7B2996 /* Pods-XYTrainTicket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYTrainTicket.release.xcconfig"; path = "Target Support Files/Pods-XYTrainTicket/Pods-XYTrainTicket.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +126,8 @@
 			children = (
 				184B0E2722C749F3005AB052 /* GetVerifyImage.h */,
 				184B0E2822C749F3005AB052 /* GetVerifyImage.m */,
+				18B0869A22D23367008FAF6D /* CheckVerify.h */,
+				18B0869B22D23367008FAF6D /* CheckVerify.m */,
 			);
 			path = request;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 		187A664A22BFB6CB005AA504 /* XYTrainTicket */ = {
 			isa = PBXGroup;
 			children = (
+				18B0869E22D23F43008FAF6D /* certificate */,
 				187A668222BFB76F005AA504 /* Utils */,
 				187A664B22BFB6CB005AA504 /* AppDelegate.h */,
 				187A664C22BFB6CB005AA504 /* AppDelegate.m */,
@@ -165,6 +177,7 @@
 				187A665A22BFB6CD005AA504 /* main.m */,
 				187A665C22BFB6CD005AA504 /* XYTrainTicket.entitlements */,
 				187A665122BFB6CB005AA504 /* XYTrainTicket.xcdatamodeld */,
+				18B0869D22D2356C008FAF6D /* TrainTicket.pch */,
 			);
 			path = XYTrainTicket;
 			sourceTree = "<group>";
@@ -191,8 +204,18 @@
 			isa = PBXGroup;
 			children = (
 				184B0E2022C745C5005AB052 /* Http */,
+				18B0869722D22A6C008FAF6D /* XYCover.h */,
+				18B0869822D22A6C008FAF6D /* XYCover.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		18B0869E22D23F43008FAF6D /* certificate */ = {
+			isa = PBXGroup;
+			children = (
+				18B0869F22D23F54008FAF6D /* trainTicket.cer */,
+			);
+			path = certificate;
 			sourceTree = "<group>";
 		};
 		2982CC2E6182D41106B85488 /* Frameworks */ = {
@@ -331,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				187A665522BFB6CD005AA504 /* Assets.xcassets in Resources */,
+				18B086A022D23F54008FAF6D /* trainTicket.cer in Resources */,
 				187A665822BFB6CD005AA504 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,9 +469,11 @@
 				187A665322BFB6CB005AA504 /* XYTrainTicket.xcdatamodeld in Sources */,
 				184B0E2922C749F3005AB052 /* GetVerifyImage.m in Sources */,
 				187A665022BFB6CB005AA504 /* ViewController.m in Sources */,
+				18B0869C22D23367008FAF6D /* CheckVerify.m in Sources */,
 				187A665B22BFB6CD005AA504 /* main.m in Sources */,
 				187A664D22BFB6CB005AA504 /* AppDelegate.m in Sources */,
 				187A668522BFB793005AA504 /* HttpUtil.m in Sources */,
+				18B0869922D22A6C008FAF6D /* XYCover.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LK4V99B6XH;
+				GCC_PREFIX_HEADER = XYTrainTicket/TrainTicket.pch;
 				INFOPLIST_FILE = XYTrainTicket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -633,6 +660,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LK4V99B6XH;
+				GCC_PREFIX_HEADER = XYTrainTicket/TrainTicket.pch;
 				INFOPLIST_FILE = XYTrainTicket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
